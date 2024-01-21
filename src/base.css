@@ -1,0 +1,35 @@
+/* #root {
+    
+} */
+
+.container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+}
+
+.title2--comments {
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.title3 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.title3--benefits {
+  margin-bottom: 12px;
+}

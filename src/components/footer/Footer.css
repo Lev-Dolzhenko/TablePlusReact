@@ -1,0 +1,49 @@
+.footer {
+    padding: 70px 0;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 2fr;
+}
+
+.grid__logotype__title {
+  color: #8cc004;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.625px;
+
+  margin: 5px 0 10px 0;
+}
+
+.grid__logotype__subtitle {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.grid__link {
+    color: rgba(63, 63, 63, 0.7);
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: color 0.2s linear;
+}
+
+.grid__link:hover {
+    color: rgb(0, 0, 0);
+}
+
+.grid__item + .grid__item {
+    margin-top: 15px;
+}
+
+.grid__item--title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.grid__item--accent {
+    font-size: 14px;
+}
