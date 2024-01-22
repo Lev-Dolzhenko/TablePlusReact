@@ -14,6 +14,10 @@
   line-height: 28px;
 }
 
+.benefits {
+  padding-top: 100px;
+}
+
 .benefits__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

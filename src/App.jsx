@@ -1,34 +1,33 @@
-import Header from './components/header/Header'
-import Comments from './components/comments/comments/Comments'
-import Benefits from './components/benefits/Benefits'
-import Footer from './components/footer/Footer'
-import Catalog from './components/catalog/Catalog'
+import Header from "./components/header/Header";
+import Comments from "./components/comments/comments/Comments";
+import Benefits from "./components/benefits/Benefits";
+import Footer from "./components/footer/Footer";
+import Catalog from "./components/catalog/Catalog";
+import News from "./components/news/News";
+import Main from "./components/main/Main";
 
-
-import './App.css'
-import './reset.css'
-import './fonts/inter.css'
-import News from './components/news/News'
-
+import "./App.css";
+import "./reset.css";
+import "./fonts/inter.css";
 
 function App() {
-
   return (
     <>
-      {/* <Header /> */}
+      <Header />
 
-      {/* <Comments /> */}
+      <Main />
 
-      {/* <Benefits /> */}
+      <Catalog />
 
-       {/* <Footer /> */}
+      <News />
 
-       {/* <Catalog /> */}
+      <Comments />
 
-       <News />
+      <Benefits />
 
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

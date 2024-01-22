@@ -1,3 +1,7 @@
+.news {
+    margin-top: 180px;
+}
+
 .news-offers__grid {
   display: grid;
   grid-template-columns: 2.5fr 1.5fr;
@@ -128,4 +132,119 @@
   position: absolute;
   left: 26px;
   bottom: 30px;
+}
+
+.news__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+
+  margin-top: 25px;
+}
+
+.news__grid__item {
+  display: flex;
+  flex-direction: column;
+  padding: 139px 18px 21px;
+
+  border-radius: 10px;
+
+  /* background: linear-gradient(60deg, rgba(0, 0, 0, 0.40) -24.46%, rgba(0, 0, 0, 0.00) 132.86%), lightgray 50% / cover no-repeat, #F9F8F9; */
+}
+
+.news__grid__item strong {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+
+  margin-bottom: 9px;
+
+  /* padding-top: 139px; */
+}
+
+.news__grid__item a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.news__grid__item--one {
+  background-image: url(./../../content/News/newsOne.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news__grid__item--two {
+  background-image: url(./../../content/News/newsTwo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news__grid__item--three {
+  background-image: url(./../../content/News/newsThree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news__grid__item--four {
+  background-image: url(./../../content/News/newsFour.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news__youtube {
+  width: 100%;
+  background-color: #ff2632;
+  border-radius: 10px;
+
+  margin-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0px 60px;
+}
+
+.news__youtube__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  color: #fff;
+
+  margin-top: 35px;
+}
+
+.news__youtube__text p {
+  max-width: 408px;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+
+  margin-bottom: 30px;
+}
+
+.news__youtube__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7px;
+
+
+    padding: 12px 17px;
+    border-radius: 8px;
+
+    background-color: #fff;
+    color: #ff2632;
+
+    transition: opacity 0.2s linear;
+}
+
+.news__youtube__button:hover {
+    opacity: 0.9;
 }

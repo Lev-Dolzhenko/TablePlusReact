@@ -1,0 +1,143 @@
+.main {
+  /* position: relative; */
+
+  background-color: #e8e8e8;
+  padding: 267px 0 175px;
+}
+
+.container--main {
+  position: relative;
+}
+
+.main__text--subtitle {
+  max-width: 482px;
+}
+
+.main__text--subtitle p {
+  color: rgba(29, 28, 28, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.main__armchair {
+  position: absolute;
+  bottom: calc(-824 * 100% / 822);
+  right: calc(-59 * 100% / 1440);
+}
+
+.main__lamp {
+  position: absolute;
+  right: 80px;
+  top: calc(-654 * 100% / 822);
+}
+
+.main__hint {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  padding: 13px 13px;
+
+  border-radius: 20px;
+  background: linear-gradient(
+    91deg,
+    rgba(255, 255, 255, 0.75) 0.45%,
+    rgba(255, 255, 255, 0) 144.28%
+  );
+  backdrop-filter: blur(2.5px);
+  max-width: 193px;
+
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.main__hint__material {
+  position: absolute;
+  left: calc(217 * 100% / 1440);
+  top: calc(452 * 100% / 822);
+}
+
+.main__hint__stand {
+  position: absolute;
+  right: 74px;
+  bottom: 44px;
+}
+
+.hint__add__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #ffb82e;
+}
+
+.main__armchair__info {
+  position: absolute;
+  left: 67%;
+    top: 25%;
+
+  height: 321px;
+  width: 365px;
+
+  padding: 38px 34px;
+
+  background-color: #d0d0d0;
+  border-radius: 10px;
+}
+
+.armchair__info--title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 6px;
+}
+
+.armchair__info--subtitle {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 19px;
+}
+
+.armchair__info--variants {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info--variants__colors {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.color {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.color--white {
+    background-color: white;
+}
+
+.color--red {
+    background-color: red;
+}
+
+.color--gold {
+    background-color: #DFBB76;
+}
+
+.color--grey {
+    background-color: #646464;
+}
