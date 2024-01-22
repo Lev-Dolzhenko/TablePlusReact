@@ -1,0 +1,6 @@
+.catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: clamp(0.563rem, 0.277rem + 1.43vw, 1.563rem);
+    row-gap: clamp(1.563rem, 1.17rem + 1.96vw, 2.938rem);
+}

@@ -1,0 +1,131 @@
+.news-offers__grid {
+  display: grid;
+  grid-template-columns: 2.5fr 1.5fr;
+  /* grid-template-rows: 2.5fr 1.5fr; */
+  gap: 25px;
+
+  margin-top: 60px;
+}
+
+.news-offers--hit {
+  background-image: url(./../../content/News/hit.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+
+  grid-row: span 2;
+
+  padding: 77px 44px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.news--hit__name {
+  color: #9dc82c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+
+  margin-bottom: 2px;
+}
+
+.news--hit__title {
+  color: #1b1b1b;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 35px;
+
+  margin-bottom: 10px;
+}
+
+.news--hit__info {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  margin-bottom: 24px;
+}
+
+.news--hit__price {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 14px;
+
+  margin-bottom: 39px;
+}
+
+.hit__price {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.hit__price--old {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+.news--hit__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 28px;
+  background-color: #9dc82c;
+  border-radius: 8px;
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.news-offers--new {
+  background-image: url(./../../content/News/new.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.news-offers--new::before {
+  content: "Новинки в мире диванов";
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+
+  position: absolute;
+  left: 26px;
+  bottom: 30px;
+}
+
+.offets--new__title {
+}
+
+.news-offers--choose {
+  background-image: url(./../../content/News/choose.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.news-offers--choose::before {
+  content: "Выбираем правильный стол в месте";
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+
+  position: absolute;
+  left: 26px;
+  bottom: 30px;
+}

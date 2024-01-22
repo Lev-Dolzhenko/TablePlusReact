@@ -27,6 +27,14 @@
   padding: 10px;
 }
 
+.catalogImg {
+  stroke: white
+}
+
+.catalogImg--active {
+  stroke: #9dc82c;
+}
+
 .button--catalog {
   border: 1px solid #fff;
   border-radius: 10px;
@@ -35,6 +43,13 @@
   font-size: 14px;
   font-weight: 600;
 }
+
+.button--catalog--active {
+  background-color: #fff;
+  color: #9dc82c;
+}
+
+
 
 .header__grid__bag {
     justify-self: end;
