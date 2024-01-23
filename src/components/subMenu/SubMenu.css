@@ -60,5 +60,30 @@
 }
 
 .sub-menu__button:hover {
-    background-color: #ff4952;
+  background-color: #ff4952;
+}
+
+.sub-menu__closeIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .sub-menu__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .sub-menu__closeIcon {
+    display: block;
+    position: absolute;
+    right: 62px;
+    top: 29px;
+  }
+}
+
+@media only screen and (max-width: 498px) {
+  .sub-menu__grid {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
 }

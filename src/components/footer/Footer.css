@@ -1,5 +1,5 @@
 .footer {
-    padding: 70px 0;
+    padding: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem) 0;
 }
 
 .footer__grid {
@@ -46,4 +46,26 @@
 
 .grid__item--accent {
     font-size: 14px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr 1fr
+  }
+
+  .footer__grid__logotype {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer__grid__logotype {
+    display: block;
+  }
 }

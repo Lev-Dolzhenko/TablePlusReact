@@ -1,5 +1,7 @@
 .news {
-    margin-top: 180px;
+  /* margin-top: clamp(2.5rem, 2.196rem + 1.52vw, 3.563rem);
+  margin-bottom: 90px; */
+  margin: clamp(2.5rem, 2.196rem + 1.52vw, 3.563rem) 0;
 }
 
 .news-offers__grid {
@@ -87,6 +89,12 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
+  transition: opacity 0.2s linear;
+}
+
+.news--hit__button:hover {
+  opacity: 0.8;
 }
 
 .news-offers--new {
@@ -96,6 +104,16 @@
   border-radius: 10px;
 
   position: relative;
+
+}
+
+.news-elem {
+  transition: transform 0.2s linear;
+}
+
+.news-elem:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .news-offers--new::before {
@@ -108,9 +126,6 @@
   position: absolute;
   left: 26px;
   bottom: 30px;
-}
-
-.offets--new__title {
 }
 
 .news-offers--choose {
@@ -154,7 +169,7 @@
 
 .news__grid__item strong {
   color: #fff;
-  font-size: 18px;
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
   font-weight: 600;
   line-height: 20px;
 
@@ -165,9 +180,13 @@
 
 .news__grid__item a {
   color: #fff;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0.714rem + 0.18vw, 0.875rem);
   font-weight: 400;
   line-height: 20px;
+  text-decoration: underline;
+}
+
+.news__grid__link:hover {
   text-decoration: underline;
 }
 
@@ -222,7 +241,7 @@
   max-width: 408px;
 
   color: #fff;
-  font-size: 18px;
+  font-size: clamp(0.813rem, 0.723rem + 0.45vw, 1.125rem);
   font-weight: 400;
   line-height: 30px;
 
@@ -230,21 +249,51 @@
 }
 
 .news__youtube__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7px;
 
+  padding: 12px 17px;
+  border-radius: 8px;
 
-    padding: 12px 17px;
-    border-radius: 8px;
+  background-color: #fff;
+  color: #ff2632;
 
-    background-color: #fff;
-    color: #ff2632;
-
-    transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 
 .news__youtube__button:hover {
-    opacity: 0.9;
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .news-offers__grid {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .news__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news__youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .news__youtube__text {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .news__grid {
+      grid-template-columns: 1fr;
+    }
 }

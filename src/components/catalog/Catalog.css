@@ -1,5 +1,5 @@
 .catalog {
-    margin-top: 187px;
+    margin-top: clamp(2.813rem, 0.277rem + 12.68vw, 11.688rem);
 }
 
 .catalog__grid {
@@ -7,4 +7,16 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: clamp(0.563rem, 0.277rem + 1.43vw, 1.563rem);
     row-gap: clamp(1.563rem, 1.17rem + 1.96vw, 2.938rem);
+}
+
+@media only screen and (max-width: 992px) {
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .catalog__grid {
+        grid-template-columns: 1fr;
+    }
 }

@@ -22,29 +22,29 @@ function News() {
             </div>
             <button className="news--hit__button">В корзину</button>
           </div>
-          <div className="news-offers--new"></div>
-          <div className="news-offers--choose"></div>
+          <div className="news-elem news-offers--new"></div>
+          <div className="news-elem news-offers--choose"></div>
         </div>
         <div className="news__grid">
-          <div className="news__grid__item news__grid__item--one">
+          <div className="news-elem news__grid__item news__grid__item--one">
             <strong>Правильные интерьерные кресла</strong>
             <a href="#!" className="news__grid__link">
               К статье
             </a>
           </div>
-          <div className="news__grid__item news__grid__item--two">
+          <div className="news-elem news__grid__item news__grid__item--two">
             <strong>Не можете выбрать обеденный стол?</strong>
             <a href="#!" className="news__grid__link">
               К статье
             </a>
           </div>
-          <div className="news__grid__item news__grid__item--three">
+          <div className="news-elem news__grid__item news__grid__item--three">
             <strong>Какие стулья часто покупают в прихожую</strong>
             <a href="#!" className="news__grid__link">
               К статье
             </a>
           </div>
-          <div className="news__grid__item news__grid__item--four">
+          <div className="news-elem news__grid__item news__grid__item--four">
             <strong>Правильно и удобно выбираем кресло</strong>
             <a href="#!" className="news__grid__link">
               К статье

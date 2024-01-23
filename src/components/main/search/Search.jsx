@@ -12,10 +12,10 @@ function Search() {
         placeholder="Найти товары"
       />
       <div className="search__form__wrapper__button">
-        <p>
+        {/* <p>
           Поиск по: <span>товарам</span>
-        </p>
-        <img src={moriInfoIcon} alt="more info" />
+        </p> */}
+        {/* <img src={moriInfoIcon} alt="more info" /> */}
         <button className="search__form--button">
           <img src={seacrhIcon} alt="button icon" />
         </button>

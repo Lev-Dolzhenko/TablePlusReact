@@ -20,7 +20,7 @@
 
 .card__info__name {
   color: #000;
-  font-size: 18px;
+  font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
   font-weight: 700;
 
   margin-bottom: 7px;
@@ -28,7 +28,7 @@
 
 .card__info__color {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0.714rem + 0.18vw, 0.875rem);
   font-weight: 400;
 
   margin-bottom: 20px;
@@ -42,13 +42,13 @@
 
 .card__info__price p {
   color: #000;
-  font-size: 20px;
+  font-size: clamp(0.938rem, 0.848rem + 0.45vw, 1.25rem);
   font-weight: 400;
 }
 
 .card__info__price span {
   color: rgba(0, 0, 0, 0.25);
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0.714rem + 0.18vw, 0.875rem);
   font-weight: 300;
   text-decoration:line-through;
 }

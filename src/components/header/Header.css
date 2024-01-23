@@ -1,12 +1,23 @@
 .header {
   background-color: #9dc82c;
-  padding: 20px 0;
+  padding: clamp(0.875rem, 0.768rem + 0.54vw, 1.25rem) 0;
 }
 
 .container--header {
   max-width: 1350px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.header__grid__nav--mobile ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .header__grid {
@@ -16,7 +27,7 @@
 }
 
 .header__grid__catalog {
-    justify-self: center;
+  justify-self: center;
 }
 
 .button {
@@ -28,7 +39,7 @@
 }
 
 .catalogImg {
-  stroke: white
+  stroke: white;
 }
 
 .catalogImg--active {
@@ -49,10 +60,8 @@
   color: #9dc82c;
 }
 
-
-
 .header__grid__bag {
-    justify-self: end;
+  justify-self: end;
 }
 
 .button--bag {
@@ -70,13 +79,57 @@
 }
 
 .nav__list__link {
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 14px;
-    font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  font-weight: 500;
 
-    transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 
 .nav__list__link:hover {
-    color: #fff;
+  color: #fff;
+}
+
+.header__grid__logotype__img {
+  width: clamp(4.875rem, 4.054rem + 4.11vw, 7.75rem);
+}
+
+.header__grid__burger {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .header__grid {
+    grid-template-columns: 1fr 2fr 0.5fr 0.5fr;
+  }
+  .header__grid__nav {
+    display: none;
+  }
+  .header__grid__logotype {
+    justify-self: center;
+    order: 1;
+  }
+  .header__grid__catalog {
+    justify-self: left;
+    order: 0;
+  }
+  .header__grid__bag {
+    order: 3;
+  }
+  .header__grid__burger {
+    justify-self: right;
+    order: 2;
+
+    display: block;
+  }
+  .button--bag span {
+    display: none;
+  }
+  .catalogImg {
+    display: none;
+  }
+  .button--catalog {
+    padding: 6px 9px;
+  }
 }

@@ -18,3 +18,12 @@
   color: #fff;
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .catalog__tab {
+    overflow: hidden;
+    overflow-x: auto;
+    /* align-items: flex-start; */
+    justify-content: unset;
+  }
+}

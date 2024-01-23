@@ -15,7 +15,8 @@
 }
 
 .benefits {
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  padding-top: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem);
 }
 
 .benefits__grid {
